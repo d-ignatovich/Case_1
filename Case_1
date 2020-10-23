@@ -1,0 +1,108 @@
+# Case-study #1
+# Developers:   Ignatovich D. (50%),
+#               Poylova E. (25%),
+#               Miller A. (25%)
+
+
+import turtle
+turtle.pensize(1)
+turtle.speed(100)
+def square(x, y, a):
+    '''
+    Function, drawing square.
+    :param x: lower left corner coordinate x
+    :param y: lower left corner coordinate y
+    :param a: side length of a square
+    :return: None
+    '''
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.color("white", "#ff7d00")
+    turtle.down()
+    turtle.begin_fill()
+    for i in range(4):
+        turtle.forward(a)
+        turtle.left(90)
+    turtle.end_fill()
+    turtle.setheading(0)
+    turtle.up()
+
+def triangle(x, y, a, c):
+    '''
+    Function, drawing triangle.
+    :param x: lower left corner coordinate x
+    :param y: lower left corner coordinate y
+    :param a: the size of the cathetus
+    :param с: the fill color of the triangle
+    :return: None
+    '''
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.pencolor("white")
+    turtle.fillcolor(c)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.left(90)
+    turtle.forward(a)
+    turtle.left(135)
+    turtle.forward((2*a*a)**(0.5))
+    turtle.end_fill()
+    turtle.setheading(0)
+    turtle.up()
+
+def parallelogram(x, y, a):
+    '''
+    Function, drawing parallelogram.
+    :param x: lower left corner coordinate x
+    :param y: lower left corner coordinate y
+    :param a: side length of a parallelogram
+    :return: None
+    '''
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.color("white", "#8fcd1e")
+    turtle.down()
+    turtle.begin_fill()
+    for i in range(2):
+        turtle.forward(a)
+        turtle.left(135)
+        turtle.forward((2*a*a)**(0.5))
+        turtle.left(45)
+    turtle.end_fill()
+    turtle.setheading(0)
+    turtle.up()
+
+#figure_1 upper left corner
+square(-300, 200, 40)
+parallelogram(-315, 240, 30)
+triangle(-360, 160, 60, '#f72a49')
+turtle.left(180)
+triangle(-300, 160, 60, '#fede0c')
+turtle.left(45)
+triangle(-300, 140, 30, '#ef66e9')
+triangle(-360, 100, 40, '#4ebbe9')
+turtle.right(90)
+triangle(-320, 130, 30, '#a34fe3')
+
+#figure_2 upper central
+triangle(-110, 160, 30, '#a34fe3')
+turtle.left(180)
+triangle(-50, 190, 30, '#ef66e9')
+parallelogram(-80, 190, 30)
+turtle.right(45)
+square(-50, 190, 40)
+triangle(-52, 130, 60, '#fede0c')
+turtle.left(90)
+triangle(8, 190, 60, '#f72647')
+turtle.left(45)
+triangle(8, 170, 40, '#4ebbe9')
+
+#figure_3 upper right corner
+turtle.left(135)
+parallelogram(150, 190, 30)
+turtle.left(90)
+triangle(190, 150, 60, '#f72647')
+turtle.left(135)
+triangle(190, 210, 40, '#4ebbe9')
+turtle.done()
