@@ -209,5 +209,6 @@ turtle.left(45)
 parallelogram(-8, -218, 80)
 turtle.left(-45)
 triangle(-120, 10, 160, '#f72647')
+turtle.hideturtle()
 turtle.done()
 
