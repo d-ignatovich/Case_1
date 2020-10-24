@@ -130,5 +130,16 @@ triangle(-310, -175, 40, '#4ebbe9')
 turtle.right(135)
 triangle(-310, -160, 30, '#a34fe3')
 
+#figure_5 bottom left
+triangle(-380, -370, 70, '#fede0c')
+turtle.left(45)
+triangle(-318, -380, 70, '#f72647')
+turtle.right(90)
+triangle(-318, -246, 35, '#a34fe3')
+parallelogram(-331, -415, 35)
+turtle.left(135)
+triangle(-260, -380, 40, '#ef66e9')
+turtle.right(45)
+triangle(-330, -380, 50, '#4ebbe9')
 turtle.done()
 
