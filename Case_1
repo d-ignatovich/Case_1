@@ -117,6 +117,8 @@ triangle(328, 168, 40, '#a34fe3')
 
 #figure_4 middle left
 triangle(-370, -140, 60, '#fede0c')
+turtle.right(45)
+square(-340, -10, 40)
 turtle.left(180)
 triangle(-270, -40, 60, '#f72647')
 turtle.left(90)
