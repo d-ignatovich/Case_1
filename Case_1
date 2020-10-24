@@ -3,10 +3,12 @@
 #               Poylova E. (25%),
 #               Miller A. (25%)
 
+#Ignatovich D.
 
 import turtle
 turtle.pensize(1)
 turtle.speed(100)
+turtle.screensize(1000, 1000)
 def square(x, y, a):
     '''
     Function, drawing square.
