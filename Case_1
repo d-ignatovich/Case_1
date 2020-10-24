@@ -2,13 +2,12 @@
 # Developers:   Ignatovich D. (50%),
 #               Poylova E. (25%),
 #               Miller A. (25%)
-
-#Ignatovich D.
-
 import turtle
 turtle.pensize(1)
 turtle.speed(100)
 turtle.screensize(1000, 1000)
+
+
 def square(x, y, a):
     '''
     Function, drawing square.
@@ -28,6 +27,7 @@ def square(x, y, a):
     turtle.end_fill()
     turtle.setheading(0)
     turtle.up()
+
 
 def triangle(x, y, a, c):
     '''
@@ -53,6 +53,7 @@ def triangle(x, y, a, c):
     turtle.setheading(0)
     turtle.up()
 
+
 def parallelogram(x, y, a):
     '''
     Function, drawing parallelogram.
@@ -74,6 +75,7 @@ def parallelogram(x, y, a):
     turtle.end_fill()
     turtle.setheading(0)
     turtle.up()
+
 
 #figure_1 upper left corner
 square(-300, 200, 40)
@@ -115,8 +117,6 @@ triangle(355, 220, 40, '#ef66e9')
 turtle.right(135)
 triangle(328, 168, 40, '#a34fe3')
 
-# Miller A.
-
 #figure_4 middle left
 triangle(-370, -140, 60, '#fede0c')
 turtle.right(45)
@@ -132,7 +132,7 @@ triangle(-310, -175, 40, '#4ebbe9')
 turtle.right(135)
 triangle(-310, -160, 30, '#a34fe3')
 
-#figure_5 bottom left
+#figure_5 lower left corner
 triangle(-380, -370, 70, '#fede0c')
 turtle.left(45)
 triangle(-310, -380, 70, '#f72647')
@@ -146,7 +146,7 @@ triangle(-330, -380, 50, '#4ebbe9')
 turtle.right(45)
 square(-285, -355, 35)
 
-#figure_6 down the middle
+#figure_6 lower the middle
 turtle.right(135)
 triangle(10, -320, 80, '#fede0c')
 turtle.left(45)
