@@ -113,4 +113,20 @@ triangle(355, 220, 40, '#ef66e9')
 turtle.right(135)
 triangle(328, 168, 40, '#a34fe3')
 
+# Miller A.
+
+#figure_4 middle left
+triangle(-370, -140, 60, '#fede0c')
+turtle.left(180)
+triangle(-270, -40, 60, '#f72647')
+turtle.left(90)
+parallelogram(-330, -70, 30)
+turtle.right(180)
+triangle(-360, -128, 30, '#ef66e9')
+turtle.left(45)
+triangle(-310, -175, 40, '#4ebbe9')
+turtle.right(135)
+triangle(-310, -160, 30, '#a34fe3')
+
 turtle.done()
+
