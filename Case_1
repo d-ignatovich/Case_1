@@ -2,6 +2,7 @@
 # Developers:   Ignatovich D. (50%),
 #               Poylova E. (25%),
 #               Miller A. (25%)
+#Ignatovich D.
 import turtle
 turtle.pensize(1)
 turtle.speed(100)
