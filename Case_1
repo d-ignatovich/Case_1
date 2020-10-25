@@ -164,6 +164,8 @@ triangle(-105, -380, 40, '#ef66e9')
 turtle.left(45)
 square(-105, -380, 35)
 
+# Poylova E.
+
 #figure_7 right side
 turtle.left(90)
 parallelogram(280,-140,40)
