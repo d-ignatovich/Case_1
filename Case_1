@@ -117,6 +117,8 @@ triangle(355, 220, 40, '#ef66e9')
 turtle.right(135)
 triangle(328, 168, 40, '#a34fe3')
 
+#Miller A.
+
 #figure_4 middle left
 triangle(-370, -140, 60, '#fede0c')
 turtle.right(45)
